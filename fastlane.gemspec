@@ -44,7 +44,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency('multipart-post', '~> 2.0.0') # Needed for uploading builds to appetize
   spec.add_dependency('word_wrap', '~> 1.0.0') # to add line breaks for tables with long strings
 
-  spec.add_dependency('public_suffix', '~> 2.0.0') # https://github.com/fastlane/fastlane/issues/10162
+  spec.add_dependency('public_suffix')
 
   # TTY dependencies
   spec.add_dependency('tty-screen', '>= 0.6.3', '< 1.0.0') # detect the terminal width
@@ -72,7 +72,7 @@ Gem::Specification.new do |spec|
 
   # The Google API Client gem is *not* API stable between minor versions - hence the specific version locking here.
   # If you upgrade this gem, make sure to upgrade the users of it as well.
-  spec.add_dependency('google-api-client', '>= 0.13.1', '< 0.14.0') # Google API Client to access Play Publishing API
+  spec.add_dependency('google-api-client') # Google API Client to access Play Publishing API
 
   # Development only
   spec.add_development_dependency('rake', '< 12')
